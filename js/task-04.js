@@ -13,12 +13,12 @@ const counter = {
   },
 };
 
-decrementButton.addEventListener('click', function () {
+decrementButton.addEventListener('click', () => {
   counter.decrement();
   counterValue.textContent = counter.value;
 });
 
-incrementButton.addEventListener('click', function () {
+incrementButton.addEventListener('click', () => {
   counter.increment();
   counterValue.textContent = counter.value;
 });
