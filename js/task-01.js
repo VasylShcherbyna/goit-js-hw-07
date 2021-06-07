@@ -4,19 +4,23 @@ console.log(`В списке ${len} категории.`);
 
 const item = document.querySelectorAll('.item');
 
+item.forEach(el => {
+    
+        console.log(`Категория: ${el.firstElementChild.textContent}`);
+        console.log(`Количество элементов: ${el.lastElementChild.children.length}`);
+    });
 
+// console.log('Категория:', item[0].firstElementChild.textContent);
+// const list1 = document.querySelectorAll('ul')[1].getElementsByTagName('li');
+// console.log('Количество элементов:', list1.length);
 
-console.log('Категория:', item[0].firstElementChild.textContent);
-const list1 = document.querySelectorAll('ul')[1].getElementsByTagName('li');
-console.log('Количество элементов:', list1.length);
+// console.log('Категория:', item[1].firstElementChild.textContent);
+// const list2 = document.querySelectorAll('ul')[2].getElementsByTagName('li');
+// console.log('Количество элементов:', list2.length);
 
-console.log('Категория:', item[1].firstElementChild.textContent);
-const list2 = document.querySelectorAll('ul')[2].getElementsByTagName('li');
-console.log('Количество элементов:', list2.length);
-
-console.log('Категория:', item[2].firstElementChild.textContent);
-const list3 = document.querySelectorAll('ul')[3].getElementsByTagName('li');
-console.log('Количество элементов:', list3.length);
+// console.log('Категория:', item[2].firstElementChild.textContent);
+// const list3 = document.querySelectorAll('ul')[3].getElementsByTagName('li');
+// console.log('Количество элементов:', list3.length);
 
  
 
